@@ -1,13 +1,13 @@
-package class_attr_test.poms;
+package class_attr_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ClassAttrPage extends BasePOM {
+public class ClassAttrPage extends BasePage {
 
     @FindBy(xpath = "//button[contains(concat(' ', normalize-space(@class), ' '), ' btn-primary ')]")
     private WebElement primaryButton;

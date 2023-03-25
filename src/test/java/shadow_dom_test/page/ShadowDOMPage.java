@@ -1,15 +1,14 @@
-package shadow_dom_test.poms;
+package shadow_dom_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class ShadowDOMPage extends BasePOM {
+public class ShadowDOMPage extends BasePage {
 
     private WebElement generateButton;
     private WebElement copyButton;

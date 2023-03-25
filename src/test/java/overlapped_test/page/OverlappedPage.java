@@ -1,19 +1,15 @@
-package overlapped_test.poms;
+package overlapped_test.page;
 
-import base.BasePOM;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.interactions.WheelInput;
 import org.openqa.selenium.support.FindBy;
 
-import javax.swing.*;
-
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class OverlappedPage extends BasePOM {
+public class OverlappedPage extends BasePage {
 
     @FindBy(xpath = "//input[@id='id']")
     private WebElement idInput;

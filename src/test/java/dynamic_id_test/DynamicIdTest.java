@@ -1,12 +1,7 @@
 package dynamic_id_test;
 
 import base.BaseTest;
-import dynamic_id_test.poms.DynamicIdPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeClass;
+import dynamic_id_test.page.DynamicIdPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

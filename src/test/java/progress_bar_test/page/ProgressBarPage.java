@@ -1,6 +1,6 @@
-package progress_bar_test.poms;
+package progress_bar_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -9,9 +9,8 @@ import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
-import java.util.function.Function;
 
-public class ProgressBarPage extends BasePOM {
+public class ProgressBarPage extends BasePage {
 
     @FindBy(xpath = "//button[@id='startButton']")
     private WebElement startButton;

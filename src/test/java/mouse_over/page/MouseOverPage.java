@@ -1,16 +1,13 @@
-package mouse_over.poms;
+package mouse_over.page;
 
-import base.BasePOM;
-import org.openqa.selenium.By;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-import static org.openqa.selenium.support.locators.RelativeLocator.*;
-import static org.openqa.selenium.support.locators.RelativeLocator.with;
 
-public class MouseOverPage extends BasePOM {
+public class MouseOverPage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"clickCount\"]")
     private WebElement timesCount;

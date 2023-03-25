@@ -1,6 +1,6 @@
-package load_delay.poms;
+package load_delay.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
 
-public class MainPage extends BasePOM {
+public class MainPage extends BasePage {
 
     @FindBy(xpath = "//*[@href=\"/loaddelay\"]")
     private WebElement loadDelayRef;

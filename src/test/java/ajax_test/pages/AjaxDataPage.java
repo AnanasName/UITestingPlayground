@@ -1,6 +1,6 @@
-package ajax_test.poms;
+package ajax_test.pages;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
 
-public class AjaxDataPage extends BasePOM {
+public class AjaxDataPage extends BasePage {
 
     @FindBy(xpath = "//button[@id='ajaxButton']")
     private WebElement triggerButton;

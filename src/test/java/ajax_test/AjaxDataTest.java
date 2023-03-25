@@ -1,6 +1,6 @@
 package ajax_test;
 
-import ajax_test.poms.AjaxDataPage;
+import ajax_test.pages.AjaxDataPage;
 import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

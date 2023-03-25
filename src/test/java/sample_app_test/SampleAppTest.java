@@ -3,7 +3,7 @@ package sample_app_test;
 import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import sample_app_test.poms.SampleAppPage;
+import sample_app_test.page.SampleAppPage;
 
 import static util.Constants.BASE_URL;
 

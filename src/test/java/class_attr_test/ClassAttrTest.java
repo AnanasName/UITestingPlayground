@@ -1,13 +1,7 @@
 package class_attr_test;
 
 import base.BaseTest;
-import class_attr_test.poms.ClassAttrPage;
-import io.github.bonigarcia.wdm.WebDriverManager;
-import mouse_over.poms.MouseOverPage;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.BeforeClass;
+import class_attr_test.page.ClassAttrPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

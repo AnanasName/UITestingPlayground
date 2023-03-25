@@ -1,13 +1,13 @@
-package sample_app_test.poms;
+package sample_app_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class SampleAppPage extends BasePOM {
+public class SampleAppPage extends BasePage {
 
     @FindBy(xpath = "//label[@id='loginstatus']")
     private WebElement welcomeText;

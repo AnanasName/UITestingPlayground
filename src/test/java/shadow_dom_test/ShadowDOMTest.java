@@ -3,7 +3,7 @@ package shadow_dom_test;
 import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import shadow_dom_test.poms.ShadowDOMPage;
+import shadow_dom_test.page.ShadowDOMPage;
 
 import java.awt.*;
 import java.awt.datatransfer.Clipboard;

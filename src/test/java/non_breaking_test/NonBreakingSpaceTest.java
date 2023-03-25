@@ -1,7 +1,7 @@
 package non_breaking_test;
 
 import base.BaseTest;
-import non_breaking_test.poms.NonBreakingSpacePage;
+import non_breaking_test.page.NonBreakingSpacePage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

@@ -3,7 +3,7 @@ package text_input;
 import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import text_input.poms.TextInputPage;
+import text_input.page.TextInputPage;
 
 import static util.Constants.BASE_URL;
 

@@ -1,16 +1,17 @@
-package non_breaking_test.poms;
+package dynamic_id_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class NonBreakingSpacePage extends BasePOM {
+// page_url = http://uitestingplayground.com/dynamicid
+public class DynamicIdPage extends BasePage {
 
-    @FindBy(xpath = "//button[contains(., 'My') and contains(., 'Button')]")
+    @FindBy(className = "btn-primary")
     private WebElement button;
 
-    public NonBreakingSpacePage(WebDriver driver) {
+    public DynamicIdPage(WebDriver driver) {
         super(driver);
     }
 

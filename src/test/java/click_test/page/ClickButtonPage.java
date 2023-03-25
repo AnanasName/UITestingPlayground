@@ -1,14 +1,13 @@
-package click_test.poms;
+package click_test.page;
 
-import base.BasePOM;
+import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 // page_url = http://uitestingplayground.com/click
-public class ClickButtonPage extends BasePOM {
+public class ClickButtonPage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"badButton\"]")
     private WebElement button;
