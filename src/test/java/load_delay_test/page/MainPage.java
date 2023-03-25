@@ -13,20 +13,23 @@ import java.time.Duration;
 
 public class MainPage extends BasePage {
 
-    @FindBy(xpath = "//*[@href=\"/loaddelay\"]")
+    public static final int TIMEOUT_DURATION = 15;
+    public static final int POLLING_DURATION = 3;
+
+    @FindBy(xpath = "//*[@href='/loaddelay']")
     private WebElement loadDelayRef;
 
     public MainPage(WebDriver driver) {
         super(driver);
     }
 
-    public void clickLoadDelayRefAndWaitForNewPage(){
+    public void clickLoadDelayRefAndWaitForNewPage() {
         loadDelayRef.click();
         Wait<WebDriver> wait = new FluentWait<>(driver)
 
-                .withTimeout(Duration.ofSeconds(15))
+                .withTimeout(Duration.ofSeconds(TIMEOUT_DURATION))
 
-                .pollingEvery(Duration.ofSeconds(3))
+                .pollingEvery(Duration.ofSeconds(POLLING_DURATION))
 
                 .ignoring(NoSuchElementException.class);
 

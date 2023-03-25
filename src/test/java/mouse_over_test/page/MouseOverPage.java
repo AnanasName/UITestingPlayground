@@ -23,7 +23,7 @@ public class MouseOverPage extends BasePage {
         clickmeButton.click();
     }
 
-    public void assertClickTimes(){
-        assertThat(timesCount.getText().equals("1"));
+    public String getTimesCount() {
+        return timesCount.getText();
     }
 }

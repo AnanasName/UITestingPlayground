@@ -8,6 +8,9 @@ import progress_bar_test.page.ProgressBarPage;
 import static util.Constants.BASE_URL;
 
 public class ProgressBarTest extends BaseTest {
+
+    public static final String PROGRESS_BAR_VALUE = "75%";
+
     @BeforeMethod
     public void initMethod() {
         driver.get(BASE_URL + "progressbar");
@@ -17,7 +20,7 @@ public class ProgressBarTest extends BaseTest {
     public void testProgressBar() {
         ProgressBarPage progressBarPage = new ProgressBarPage(driver);
         progressBarPage.clickStartButton();
-        progressBarPage.waitForProgressBarValue("75%");
+        progressBarPage.waitForProgressBarValue(PROGRESS_BAR_VALUE);
         progressBarPage.clickStopButton();
     }
 }
