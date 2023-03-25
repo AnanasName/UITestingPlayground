@@ -12,6 +12,9 @@ import java.time.Duration;
 
 public class ProgressBarPage extends BasePage {
 
+    private static final int TIMEOUT_DURATION = 15;
+    public static final int POLLING_DURATION = 50;
+
     @FindBy(xpath = "//button[@id='startButton']")
     private WebElement startButton;
 
@@ -35,8 +38,8 @@ public class ProgressBarPage extends BasePage {
 
     public void waitForProgressBarValue(String valueInProgressBar) {
         Wait<WebDriver> wait = new FluentWait<>(driver)
-                .pollingEvery(Duration.ofMillis(100))
-                .withTimeout(Duration.ofSeconds(50));
+                .pollingEvery(Duration.ofMillis(POLLING_DURATION))
+                .withTimeout(Duration.ofSeconds(TIMEOUT_DURATION));
 
         wait.until(ExpectedConditions.textToBePresentInElement(progressBar, valueInProgressBar));
     }

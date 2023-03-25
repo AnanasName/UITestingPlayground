@@ -16,15 +16,15 @@ public class ClassAttrPage extends BasePage {
         super(driver);
     }
 
-    public void clickPrimaryButton(){
+    public void clickPrimaryButton() {
         primaryButton.click();
     }
 
-    public void assertTextInAlert(String textInAlert){
-        assertThat(driver.switchTo().alert().getText());
+    public String getTextFromAlert() {
+        return driver.switchTo().alert().getText();
     }
 
-    public void clickOkInAlert(){
+    public void clickOkInAlert() {
         driver.switchTo().alert().accept();
     }
 }

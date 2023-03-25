@@ -9,18 +9,19 @@ import static util.Constants.BASE_URL;
 
 public class OverlappedTest extends BaseTest {
 
+    public static final String OVERLAPPED_TEST_TEXT = "OVERLAPPED_TEST_TEXT";
+
     @BeforeMethod
-    public void initMethod(){
+    public void initMethod() {
         driver.get(BASE_URL + "overlapped");
     }
 
     @Test
-    public void testLoadDelay(){
-        String textToTest = "My Name";
+    public void testLoadDelay() {
         OverlappedPage overlappedPage = new OverlappedPage(driver);
         overlappedPage.scrollToNameInput();
-        overlappedPage.typeTextInNameInput(textToTest);
-        overlappedPage.assertTextInNameInputCorrect(textToTest);
+        overlappedPage.typeTextInNameInput(OVERLAPPED_TEST_TEXT);
+        overlappedPage.assertTextInNameInputCorrect(OVERLAPPED_TEST_TEXT);
         overlappedPage.assertThatNameInputIsVisible();
     }
 }

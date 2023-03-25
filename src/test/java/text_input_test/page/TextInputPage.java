@@ -26,7 +26,7 @@ public class TextInputPage extends BasePage {
         updateButton.click();
     }
 
-    public void assertButton(String text) {
-        assertThat(updateButton.getText().equals(text));
+    public String getUpdateButtonText(){
+        return updateButton.getText();
     }
 }

@@ -5,9 +5,12 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import text_input_test.page.TextInputPage;
 
+import static org.testng.AssertJUnit.assertEquals;
 import static util.Constants.BASE_URL;
 
 public class TextInputTest extends BaseTest {
+
+    public static final String TEXT_INPUT_TEST_BUTTON = "TEXT_INPUT_TEST_BUTTON";
 
     @BeforeMethod
     public void initMethod(){
@@ -16,10 +19,9 @@ public class TextInputTest extends BaseTest {
 
     @Test
     public void testButtonClick(){
-        String testText = "Some text to button";
         TextInputPage textInputPage = new TextInputPage(driver);
-        textInputPage.inputText(testText);
+        textInputPage.inputText(TEXT_INPUT_TEST_BUTTON);
         textInputPage.clickUpdateButton();
-        textInputPage.assertButton(testText);
+        assertEquals(textInputPage.getUpdateButtonText(), TEXT_INPUT_TEST_BUTTON);
     }
 }
