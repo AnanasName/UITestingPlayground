@@ -1,7 +1,7 @@
-package load_delay;
+package load_delay_test;
 
 import base.BaseTest;
-import load_delay.page.MainPage;
+import load_delay_test.page.MainPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

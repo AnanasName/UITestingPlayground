@@ -1,9 +1,9 @@
-package text_input;
+package text_input_test;
 
 import base.BaseTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import text_input.page.TextInputPage;
+import text_input_test.page.TextInputPage;
 
 import static util.Constants.BASE_URL;
 

@@ -1,7 +1,7 @@
-package mouse_over;
+package mouse_over_test;
 
 import base.BaseTest;
-import mouse_over.page.MouseOverPage;
+import mouse_over_test.page.MouseOverPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 

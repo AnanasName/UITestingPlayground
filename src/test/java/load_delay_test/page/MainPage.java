@@ -1,4 +1,4 @@
-package load_delay.page;
+package load_delay_test.page;
 
 import base.BasePage;
 import org.openqa.selenium.By;
