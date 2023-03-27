@@ -10,7 +10,7 @@ public class DynamicIdPage {
 
     private final SelenideElement button = $(byClassName("btn-primary"));
 
-    public void clickButton(){
+    public void clickButton() {
         button.click();
     }
 }

@@ -1,4 +1,4 @@
-package sample_app_test.page;
+package sample_app_tests.sample_app_selenium_test.page;
 
 import base.BasePage;
 import org.openqa.selenium.WebDriver;
