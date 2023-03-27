@@ -2,6 +2,7 @@ package mouse_over_test;
 
 import base.BaseTest;
 import mouse_over_test.page.MouseOverPage;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,7 @@ public class MouseOverTest extends BaseTest {
 
     @Test
     public void testLoadDelay() {
-        MouseOverPage mouseOverPage = new MouseOverPage(driver);
+        MouseOverPage mouseOverPage = PageFactory.initElements(driver, MouseOverPage.class);
         mouseOverPage.clickOnRef();
         assertEquals(String.valueOf(CLICKS_COUNT), mouseOverPage.getTimesCount());
     }

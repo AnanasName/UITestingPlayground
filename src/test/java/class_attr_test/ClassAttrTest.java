@@ -2,6 +2,7 @@ package class_attr_test;
 
 import base.BaseTest;
 import class_attr_test.page.ClassAttrPage;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -20,7 +21,7 @@ public class ClassAttrTest extends BaseTest {
 
     @Test
     public void clickPrimaryButtonTest() {
-        ClassAttrPage classAttrPage = new ClassAttrPage(driver);
+        ClassAttrPage classAttrPage = PageFactory.initElements(driver, ClassAttrPage.class);
         classAttrPage.clickPrimaryButton();
         assertEquals(alertText, classAttrPage.getTextFromAlert());
         classAttrPage.clickOkInAlert();

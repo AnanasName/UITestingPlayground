@@ -2,6 +2,7 @@ package click_test;
 
 import base.BaseTest;
 import click_test.page.ClickButtonPage;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -17,7 +18,7 @@ public class ClickButtonTest extends BaseTest {
 
     @Test
     public void testButtonClick(){
-        ClickButtonPage clickButtonPage = new ClickButtonPage(driver);
+        ClickButtonPage clickButtonPage = PageFactory.initElements(driver, ClickButtonPage.class);
         clickButtonPage.clickButton();
         clickButtonPage.clickButtonPhysical();
     }

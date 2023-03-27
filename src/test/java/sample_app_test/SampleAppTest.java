@@ -1,6 +1,7 @@
 package sample_app_test;
 
 import base.BaseTest;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import sample_app_test.page.SampleAppPage;
@@ -21,7 +22,7 @@ public class SampleAppTest extends BaseTest {
 
     @Test
     public void testProgressBar() {
-        SampleAppPage sampleAppPage = new SampleAppPage(driver);
+        SampleAppPage sampleAppPage = PageFactory.initElements(driver, SampleAppPage.class);
         sampleAppPage.typeLogin(LOGIN);
         sampleAppPage.typePassword(PASSWORD);
         sampleAppPage.clickLogOutButton();
