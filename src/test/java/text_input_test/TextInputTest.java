@@ -13,6 +13,7 @@ public class TextInputTest extends BaseTest {
     public static final String TEXT_INPUT_TEST_BUTTON = "TEXT_INPUT_TEST_BUTTON";
 
     @BeforeMethod
+    @Override
     public void initMethod(){
         driver.get(BASE_URL + "textinput");
     }

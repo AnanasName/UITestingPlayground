@@ -12,6 +12,7 @@ public class ProgressBarTest extends BaseTest {
     public static final String PROGRESS_BAR_VALUE = "75%";
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL + "progressbar");
     }

@@ -13,6 +13,7 @@ public class OverlappedTest extends BaseTest {
     public static final String OVERLAPPED_TEST_TEXT = "OVERLAPPED_TEST_TEXT";
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL + "overlapped");
     }

@@ -17,6 +17,9 @@ public abstract class BaseTest {
     }
 
     @BeforeMethod
+    public abstract void initMethod();
+
+    @BeforeMethod
     public void initBaseMethod() {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--remote-allow-origins=*");

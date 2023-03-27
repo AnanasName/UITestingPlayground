@@ -10,10 +10,11 @@ import org.openqa.selenium.support.ui.Wait;
 
 import java.time.Duration;
 
+//TODO исправить логику
 public class ProgressBarPage extends BasePage {
 
     private static final int TIMEOUT_DURATION = 15;
-    public static final int POLLING_DURATION = 50;
+    public static final int POLLING_DURATION = 70;
 
     @FindBy(xpath = "//button[@id='startButton']")
     private WebElement startButton;

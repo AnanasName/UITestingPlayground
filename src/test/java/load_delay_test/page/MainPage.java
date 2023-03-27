@@ -26,11 +26,8 @@ public class MainPage extends BasePage {
     public void clickLoadDelayRefAndWaitForNewPage() {
         loadDelayRef.click();
         Wait<WebDriver> wait = new FluentWait<>(driver)
-
                 .withTimeout(Duration.ofSeconds(TIMEOUT_DURATION))
-
                 .pollingEvery(Duration.ofSeconds(POLLING_DURATION))
-
                 .ignoring(NoSuchElementException.class);
 
         wait.until(driver -> driver.findElement(By.className("btn-primary")));

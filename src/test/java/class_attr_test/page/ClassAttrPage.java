@@ -4,6 +4,7 @@ import base.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import util.UtilPageFunctions;
 
 public class ClassAttrPage extends BasePage {
 
@@ -19,10 +20,10 @@ public class ClassAttrPage extends BasePage {
     }
 
     public String getTextFromAlert() {
-        return driver.switchTo().alert().getText();
+        return UtilPageFunctions.getAlertText(driver);
     }
 
     public void clickOkInAlert() {
-        driver.switchTo().alert().accept();
+        UtilPageFunctions.clickOnAlert(driver);
     }
 }

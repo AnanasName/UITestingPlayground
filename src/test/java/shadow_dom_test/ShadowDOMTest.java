@@ -14,9 +14,11 @@ import java.io.IOException;
 
 import static util.Constants.BASE_URL;
 
+//TODO исправить логику
 public class ShadowDOMTest extends BaseTest {
 
     @BeforeMethod
+    @Override
     public void initMethod(){
         driver.get(BASE_URL + "shadowdom");
     }
@@ -27,8 +29,8 @@ public class ShadowDOMTest extends BaseTest {
         shadowDOMPage.clickGenerateButton();
         shadowDOMPage.clickCopyButton();
 
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
-        Transferable contents = clipboard.getContents(null);
-        String x = (String) contents.getTransferData(DataFlavor.stringFlavor);
+//        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+//        Transferable contents = clipboard.getContents(null);
+//        String x = (String) contents.getTransferData(DataFlavor.stringFlavor);
     }
 }

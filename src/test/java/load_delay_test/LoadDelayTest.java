@@ -10,6 +10,7 @@ import static util.Constants.BASE_URL;
 public class LoadDelayTest extends BaseTest {
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL);
     }

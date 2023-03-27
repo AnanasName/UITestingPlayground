@@ -13,6 +13,7 @@ public class ClassAttrTest extends BaseTest {
     public static final String alertText = "Primary button pressed";
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL + "classattr");
     }

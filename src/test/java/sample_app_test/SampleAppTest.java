@@ -14,6 +14,7 @@ public class SampleAppTest extends BaseTest {
     public static final String PASSWORD = "pwd";
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL + "sampleapp");
     }

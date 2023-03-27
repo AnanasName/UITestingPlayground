@@ -10,6 +10,7 @@ import static util.Constants.BASE_URL;
 public class DynamicIdTest extends BaseTest {
 
     @BeforeMethod
+    @Override
     public void initMethod(){
         driver.get(BASE_URL + "dynamicid");
     }

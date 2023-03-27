@@ -13,6 +13,7 @@ public class MouseOverTest extends BaseTest {
     public static final int CLICKS_COUNT = 1;
 
     @BeforeMethod
+    @Override
     public void initMethod() {
         driver.get(BASE_URL + "mouseover");
     }
