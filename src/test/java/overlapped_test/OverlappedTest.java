@@ -5,6 +5,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import overlapped_test.page.OverlappedPage;
 
+import static org.testng.AssertJUnit.assertEquals;
+import static org.testng.AssertJUnit.assertTrue;
 import static util.Constants.BASE_URL;
 
 public class OverlappedTest extends BaseTest {
@@ -22,6 +24,6 @@ public class OverlappedTest extends BaseTest {
         overlappedPage.scrollToNameInput();
         overlappedPage.typeTextInNameInput(OVERLAPPED_TEST_TEXT);
         overlappedPage.assertTextInNameInputCorrect(OVERLAPPED_TEST_TEXT);
-        overlappedPage.assertThatNameInputIsVisible();
+        assertTrue(overlappedPage.isNameInputDisplayed());
     }
 }

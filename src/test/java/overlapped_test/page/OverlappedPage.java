@@ -27,15 +27,19 @@ public class OverlappedPage extends BasePage {
                 .perform();
     }
 
-    public void typeTextInNameInput(String text){
+    public void typeTextInNameInput(String text) {
         nameInput.sendKeys(text);
     }
 
-    public void assertTextInNameInputCorrect(String text){
-        assertThat(nameInput.getText().equals(text));
+    public String getNameInputText() {
+        return nameInput.getText();
     }
 
-    public void assertThatNameInputIsVisible(){
-        assertThat(nameInput.isDisplayed());
+    public boolean isNameInputDisplayed() {
+        return nameInput.isDisplayed();
+    }
+
+    public void assertTextInNameInputCorrect(String text) {
+        assertThat(nameInput.getText().equals(text));
     }
 }

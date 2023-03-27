@@ -10,19 +10,19 @@ import org.openqa.selenium.support.FindBy;
 public class ClickButtonPage extends BasePage {
 
     @FindBy(xpath = "//*[@id=\"badButton\"]")
-    private WebElement button;
+    private WebElement targetBadButton;
 
     public ClickButtonPage(WebDriver driver) {
         super(driver);
     }
 
     public void clickButton(){
-        button.click();
+        targetBadButton.click();
     }
 
     public void clickButtonPhysical(){
         new Actions(driver)
-                .click(button)
+                .click(targetBadButton)
                 .perform();
     }
 }
