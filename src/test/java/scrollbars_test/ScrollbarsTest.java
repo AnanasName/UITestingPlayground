@@ -18,6 +18,7 @@ public class ScrollbarsTest extends BaseTest {
     @Test
     public void testScrollbars(){
         ScrollbarsPage scrollbarsPage = new ScrollbarsPage(driver);
+        scrollbarsPage.moveToTargetButton();
         scrollbarsPage.clickTargetButton();
     }
 }
