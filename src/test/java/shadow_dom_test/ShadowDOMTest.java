@@ -30,6 +30,5 @@ public class ShadowDOMTest extends BaseTest {
         Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
         Transferable contents = clipboard.getContents(null);
         String x = (String) contents.getTransferData(DataFlavor.stringFlavor);
-        System.out.println(x);
     }
 }
