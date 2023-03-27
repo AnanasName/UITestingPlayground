@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
 public class SampleAppPage extends BasePage {
 
     @FindBy(xpath = "//label[@id='loginstatus']")
@@ -23,19 +21,19 @@ public class SampleAppPage extends BasePage {
         super(driver);
     }
 
-    public void typeLogin(String login){
+    public void typeLogin(String login) {
         loginInput.sendKeys(login);
     }
 
-    public void typePassword(String password){
+    public void typePassword(String password) {
         passwordInput.sendKeys(password);
     }
 
-    public void clickLogOutButton(){
+    public void clickLogOutButton() {
         logOutButton.click();
     }
 
-    public void assertWelcomeTextContainsText(String textToAssert){
-        assertThat(welcomeText.getText().contains(textToAssert));
+    public String getWelcomeText() {
+        return welcomeText.getText();
     }
 }
