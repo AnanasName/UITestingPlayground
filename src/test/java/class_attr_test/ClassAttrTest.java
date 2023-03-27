@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertEquals;
-import static util.Constants.BASE_URL;
 
 public class ClassAttrTest extends BaseTest {
 
@@ -16,7 +15,7 @@ public class ClassAttrTest extends BaseTest {
     @BeforeMethod
     @Override
     public void initMethod() {
-        driver.get(BASE_URL + "classattr");
+        getPath("classattr");
     }
 
     @Test

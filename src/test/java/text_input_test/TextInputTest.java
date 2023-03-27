@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import text_input_test.page.TextInputPage;
 
 import static org.testng.AssertJUnit.assertEquals;
-import static util.Constants.BASE_URL;
 
 public class TextInputTest extends BaseTest {
 
@@ -16,7 +15,7 @@ public class TextInputTest extends BaseTest {
     @BeforeMethod
     @Override
     public void initMethod(){
-        driver.get(BASE_URL + "textinput");
+        getPath("textinput");
     }
 
     @Test

@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import sample_app_tests.sample_app_selenium_test.page.SampleAppPage;
 
 import static org.testng.AssertJUnit.assertTrue;
-import static util.Constants.BASE_URL;
 
 public class SampleAppTest extends BaseTest {
 
@@ -17,7 +16,7 @@ public class SampleAppTest extends BaseTest {
     @BeforeMethod
     @Override
     public void initMethod() {
-        driver.get(BASE_URL + "sampleapp");
+        getPath("sampleapp");
     }
 
     @Test

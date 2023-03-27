@@ -6,15 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import shadow_dom_test.page.ShadowDOMPage;
 
-import static util.Constants.BASE_URL;
-
 //TODO исправить логику
 public class ShadowDOMTest extends BaseTest {
 
     @BeforeMethod
     @Override
     public void initMethod(){
-        driver.get(BASE_URL + "shadowdom");
+        getPath("shadowdom");
     }
 
     @Test

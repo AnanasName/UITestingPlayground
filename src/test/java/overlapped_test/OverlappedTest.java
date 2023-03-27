@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 import overlapped_test.page.OverlappedPage;
 
 import static org.testng.AssertJUnit.assertTrue;
-import static util.Constants.BASE_URL;
 
 public class OverlappedTest extends BaseTest {
 
@@ -16,7 +15,7 @@ public class OverlappedTest extends BaseTest {
     @BeforeMethod
     @Override
     public void initMethod() {
-        driver.get(BASE_URL + "overlapped");
+        getPath("overlapped");
     }
 
     @Test

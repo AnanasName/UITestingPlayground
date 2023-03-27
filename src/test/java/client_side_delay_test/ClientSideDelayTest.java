@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.AssertJUnit.assertTrue;
-import static util.Constants.BASE_URL;
 
 public class ClientSideDelayTest extends BaseTest {
 
@@ -16,7 +15,7 @@ public class ClientSideDelayTest extends BaseTest {
     @BeforeMethod
     @Override
     public void initMethod() {
-        driver.get(BASE_URL + "clientdelay");
+        getPath("clientdelay");
     }
 
     @Test
