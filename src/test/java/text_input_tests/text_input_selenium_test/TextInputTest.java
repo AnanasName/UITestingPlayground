@@ -1,10 +1,10 @@
-package text_input_test;
+package text_input_tests.text_input_selenium_test;
 
 import base.base_selenium.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import text_input_test.page.TextInputPage;
+import text_input_tests.text_input_selenium_test.page.TextInputPage;
 
 import static org.testng.AssertJUnit.assertEquals;
 

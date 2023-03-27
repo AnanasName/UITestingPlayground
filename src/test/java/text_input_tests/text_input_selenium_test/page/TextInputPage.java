@@ -1,4 +1,4 @@
-package text_input_test.page;
+package text_input_tests.text_input_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
