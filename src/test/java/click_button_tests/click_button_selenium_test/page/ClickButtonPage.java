@@ -1,4 +1,4 @@
-package click_test.page;
+package click_button_tests.click_button_selenium_test.page;
 
 import base.BasePage;
 import org.openqa.selenium.WebDriver;
