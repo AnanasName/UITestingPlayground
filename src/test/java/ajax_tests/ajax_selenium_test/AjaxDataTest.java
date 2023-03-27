@@ -1,7 +1,7 @@
-package ajax_test;
+package ajax_tests.ajax_selenium_test;
 
-import ajax_test.pages.AjaxDataPage;
-import base.BaseTest;
+import ajax_tests.ajax_selenium_test.pages.AjaxDataPage;
+import base.base_selenium.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

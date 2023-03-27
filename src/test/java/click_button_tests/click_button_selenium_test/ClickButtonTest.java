@@ -1,6 +1,6 @@
 package click_button_tests.click_button_selenium_test;
 
-import base.BaseTest;
+import base.base_selenium.BaseTest;
 import click_button_tests.click_button_selenium_test.page.ClickButtonPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;

@@ -1,6 +1,6 @@
 package client_side_delay_test;
 
-import base.BaseTest;
+import base.base_selenium.BaseTest;
 import client_side_delay_test.page.ClientSideDelayPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;

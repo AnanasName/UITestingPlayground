@@ -1,6 +1,6 @@
 package mouse_over_test;
 
-import base.BaseTest;
+import base.base_selenium.BaseTest;
 import mouse_over_test.page.MouseOverPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;

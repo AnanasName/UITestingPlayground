@@ -1,6 +1,6 @@
 package progress_bar_test;
 
-import base.BaseTest;
+import base.base_selenium.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

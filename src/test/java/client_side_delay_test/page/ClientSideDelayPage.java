@@ -1,6 +1,6 @@
 package client_side_delay_test.page;
 
-import base.BasePage;
+import base.base_selenium.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

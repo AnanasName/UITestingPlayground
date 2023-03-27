@@ -1,6 +1,6 @@
 package shadow_dom_test.page;
 
-import base.BasePage;
+import base.base_selenium.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
@@ -10,9 +10,9 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class ShadowDOMPage extends BasePage {
 
-    private WebElement generateButton;
-    private WebElement copyButton;
-    private WebElement inputField;
+    private final WebElement generateButton;
+    private final WebElement copyButton;
+    private final WebElement inputField;
 
     public ShadowDOMPage(WebDriver driver) {
         super(driver);

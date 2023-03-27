@@ -1,6 +1,6 @@
 package progress_bar_test.page;
 
-import base.BasePage;
+import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
