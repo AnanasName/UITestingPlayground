@@ -1,7 +1,7 @@
-package load_delay_test;
+package load_delay_tests.load_delay_selenium_test;
 
 import base.base_selenium.BaseTest;
-import load_delay_test.page.MainPage;
+import load_delay_tests.load_delay_selenium_test.page.MainPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

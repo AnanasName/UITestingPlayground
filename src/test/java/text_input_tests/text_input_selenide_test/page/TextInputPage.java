@@ -18,6 +18,6 @@ public class TextInputPage {
     }
 
     public String getUpdateButtonText() {
-        return updateButton.getText();
+        return updateButton.text();
     }
 }
