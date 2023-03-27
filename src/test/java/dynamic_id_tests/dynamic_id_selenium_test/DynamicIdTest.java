@@ -1,7 +1,7 @@
-package dynamic_id_test;
+package dynamic_id_tests.dynamic_id_selenium_test;
 
 import base.BaseTest;
-import dynamic_id_test.page.DynamicIdPage;
+import dynamic_id_tests.dynamic_id_selenium_test.page.DynamicIdPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

@@ -1,4 +1,4 @@
-package dynamic_id_test.page;
+package dynamic_id_tests.dynamic_id_selenium_test.page;
 
 import base.BasePage;
 import org.openqa.selenium.WebDriver;
