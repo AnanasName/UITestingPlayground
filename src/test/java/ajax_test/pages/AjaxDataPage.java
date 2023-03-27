@@ -13,6 +13,9 @@ import java.time.Duration;
 
 public class AjaxDataPage extends BasePage {
 
+    public static final int POLLING_TIME = 1;
+    public static final int TIMEOUT_TIME = 60;
+
     @FindBy(xpath = "//button[@id='ajaxButton']")
     private WebElement triggerButton;
 
@@ -26,8 +29,8 @@ public class AjaxDataPage extends BasePage {
 
     public void waitForAjaxText(){
         Wait<WebDriver> wait = new FluentWait<>(driver)
-                .pollingEvery(Duration.ofSeconds(   1))
-                .withTimeout(Duration.ofSeconds(60));
+                .pollingEvery(Duration.ofSeconds(POLLING_TIME))
+                .withTimeout(Duration.ofSeconds(TIMEOUT_TIME));
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[@class='bg-success']")));
     }
