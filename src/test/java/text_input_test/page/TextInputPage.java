@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
 public class TextInputPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"updatingButton\"]")
     private WebElement updateButton;

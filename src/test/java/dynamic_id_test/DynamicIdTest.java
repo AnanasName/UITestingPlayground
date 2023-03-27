@@ -7,7 +7,6 @@ import org.testng.annotations.Test;
 
 import static util.Constants.BASE_URL;
 
-
 public class DynamicIdTest extends BaseTest {
 
     @BeforeMethod

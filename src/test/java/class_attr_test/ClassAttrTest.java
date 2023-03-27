@@ -5,7 +5,6 @@ import class_attr_test.page.ClassAttrPage;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 import static org.testng.AssertJUnit.assertEquals;
 import static util.Constants.BASE_URL;
 
