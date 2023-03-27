@@ -1,7 +1,7 @@
-package class_attr_test;
+package class_attr_tests.class_attr_selenium_test;
 
 import base.base_selenium.BaseTest;
-import class_attr_test.page.ClassAttrPage;
+import class_attr_tests.class_attr_selenium_test.page.ClassAttrPage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;

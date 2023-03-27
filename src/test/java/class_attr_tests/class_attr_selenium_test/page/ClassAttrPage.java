@@ -1,4 +1,4 @@
-package class_attr_test.page;
+package class_attr_tests.class_attr_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
