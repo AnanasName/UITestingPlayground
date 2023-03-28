@@ -1,10 +1,10 @@
-package progress_bar_test;
+package progress_bar_tests.progress_bar_selenium_test;
 
 import base.base_selenium.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import progress_bar_test.page.ProgressBarPage;
+import progress_bar_tests.progress_bar_selenium_test.page.ProgressBarPage;
 
 public class ProgressBarTest extends BaseTest {
 

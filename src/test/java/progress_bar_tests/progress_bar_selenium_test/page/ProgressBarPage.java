@@ -1,4 +1,4 @@
-package progress_bar_test.page;
+package progress_bar_tests.progress_bar_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
