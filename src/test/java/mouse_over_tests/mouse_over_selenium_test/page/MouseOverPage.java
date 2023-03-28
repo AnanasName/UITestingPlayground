@@ -1,4 +1,4 @@
-package mouse_over_test.page;
+package mouse_over_tests.mouse_over_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
