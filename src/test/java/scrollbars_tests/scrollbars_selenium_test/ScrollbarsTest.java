@@ -1,10 +1,10 @@
-package scrollbars_test;
+package scrollbars_tests.scrollbars_selenium_test;
 
 import base.base_selenium.BaseTest;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import scrollbars_test.page.ScrollbarsPage;
+import scrollbars_tests.scrollbars_selenium_test.page.ScrollbarsPage;
 
 public class ScrollbarsTest extends BaseTest {
 

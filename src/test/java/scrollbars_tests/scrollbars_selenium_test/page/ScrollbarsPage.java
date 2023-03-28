@@ -1,4 +1,4 @@
-package scrollbars_test.page;
+package scrollbars_tests.scrollbars_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;
