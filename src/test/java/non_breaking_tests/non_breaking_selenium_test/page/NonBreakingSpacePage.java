@@ -1,4 +1,4 @@
-package non_breaking_test.page;
+package non_breaking_tests.non_breaking_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.WebDriver;

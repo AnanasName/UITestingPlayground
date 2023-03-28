@@ -1,7 +1,7 @@
-package non_breaking_test;
+package non_breaking_tests.non_breaking_selenium_test;
 
 import base.base_selenium.BaseTest;
-import non_breaking_test.page.NonBreakingSpacePage;
+import non_breaking_tests.non_breaking_selenium_test.page.NonBreakingSpacePage;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
