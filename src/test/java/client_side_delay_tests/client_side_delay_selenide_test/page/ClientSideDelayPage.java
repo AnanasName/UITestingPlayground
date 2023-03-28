@@ -12,8 +12,8 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ClientSideDelayPage{
 
-    public static final int POLLING_TIME = 1;
-    public static final int TIMEOUT_TIME = 15;
+    public static final int POLLING_TIME = 100;
+    public static final int TIMEOUT_TIME = 20000;
 
     private final SelenideElement testTargetButton = $(byId("ajaxButton"));
 

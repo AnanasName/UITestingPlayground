@@ -1,0 +1,78 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name = "Selenium Suite">
+
+    <test name = "Ajax Test">
+        <classes>
+            <class name = "ajax_tests.ajax_selenide_test.AjaxDataTest" />
+        </classes>
+    </test>
+
+    <test name = "Class Attributes Test">
+        <classes>
+            <class name = "class_attr_tests.class_attr_selenide_test.ClassAttrTest" />
+        </classes>
+    </test>
+
+    <test name = "Class Button Test">
+        <classes>
+            <class name = "click_button_tests.click_button_selenide_test.ClickButtonTest" />
+        </classes>
+    </test>
+
+    <test name = "Client Side Delay Test">
+        <classes>
+            <class name = "client_side_delay_tests.client_side_delay_selenide_test.ClientSideDelayTest" />
+        </classes>
+    </test>
+
+    <test name = "Dynamic Id Test">
+        <classes>
+            <class name = "dynamic_id_tests.dynamic_id_selenide_test.DynamicIdTest" />
+        </classes>
+    </test>
+
+    <test name = "Mouse Over Test">
+        <classes>
+            <class name = "mouse_over_tests.mouse_over_selenide_test.MouseOverTest" />
+        </classes>
+    </test>
+
+    <test name = "Load Delay Test">
+        <classes>
+            <class name = "load_delay_tests.load_delay_selenide_test.LoadDelayTest" />
+        </classes>
+    </test>
+
+    <test name = "Non Breaking Space Test">
+        <classes>
+            <class name = "non_breaking_tests.non_breaking_selenide_test.NonBreakingSpaceTest" />
+        </classes>
+    </test>
+
+    <test name = "Progress Bar Test">
+        <classes>
+            <class name = "progress_bar_tests.progress_bar_selenide_test.ProgressBarTest" />
+        </classes>
+    </test>
+
+    <test name = "Sample App Test">
+        <classes>
+            <class name = "sample_app_tests.sample_app_selenide_test.page.SampleAppPage" />
+        </classes>
+    </test>
+
+    <test name = "Scrollbars Test">
+        <classes>
+            <class name = "scrollbars_tests.scrollbars_selenide_test.ScrollbarsTest" />
+        </classes>
+    </test>
+
+    <test name = "Test Input Test">
+        <classes>
+            <class name = "text_input_tests.text_input_selenide_test.TextInputTest" />
+        </classes>
+    </test>
+
+</suite>
