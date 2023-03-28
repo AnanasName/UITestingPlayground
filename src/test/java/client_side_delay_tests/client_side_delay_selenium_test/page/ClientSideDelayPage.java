@@ -1,4 +1,4 @@
-package client_side_delay_test.page;
+package client_side_delay_tests.client_side_delay_selenium_test.page;
 
 import base.base_selenium.BasePage;
 import org.openqa.selenium.By;
