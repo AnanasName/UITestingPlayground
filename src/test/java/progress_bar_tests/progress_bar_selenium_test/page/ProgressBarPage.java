@@ -13,7 +13,7 @@ import java.time.Duration;
 //TODO исправить логику
 public class ProgressBarPage extends BasePage {
 
-    private static final int TIMEOUT_DURATION = 15;
+    private static final int TIMEOUT_DURATION = 25;
     public static final int POLLING_DURATION = 70;
 
     @FindBy(xpath = "//button[@id='startButton']")

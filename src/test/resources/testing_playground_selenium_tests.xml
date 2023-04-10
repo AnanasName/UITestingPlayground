@@ -1,17 +1,17 @@
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name = "Selenium Suite">
+<suite name="Selenium Suite" thread-count="6" parallel="tests">
 
-    <test name = "Ajax Test">
+    <test name="Ajax Test">
         <classes>
-            <class name = "ajax_tests.ajax_selenium_test.AjaxDataTest" />
+            <class name="ajax_tests.ajax_selenium_test.AjaxDataTest"/>
         </classes>
     </test>
 
-    <test name = "Class Attributes Test">
+    <test name="Class Attributes Test">
         <classes>
-            <class name = "class_attr_tests.class_attr_selenium_test.ClassAttrTest" />
+            <class name="class_attr_tests.class_attr_selenium_test.ClassAttrTest"/>
         </classes>
     </test>
 
